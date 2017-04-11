@@ -1,6 +1,26 @@
 # Frequency Analysis of Words
 
-[TODO. There will be project description]
+Pass path to the text file like argument and script output to the console 10 most common words.
+
+Example
+
+```#!bash
+
+$ python3 lang_frequency.py text.txt 
+10 самых популярных слов в файле:
+text.txt
+5 и
+5 в
+3 на
+2 не
+2 скрипт
+2 такой
+2 вход
+2 можно
+2 с
+2 должен
+
+```
 
 # Project Goals
 
