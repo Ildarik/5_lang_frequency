@@ -11,7 +11,8 @@ def load_data(filepath):
 
 def get_most_frequent_words(text, count):
     clean_text = text.translate(str.maketrans("", "", string.punctuation))
-    words = clean_text.split()
+    lowercase_text = clean_text.lower()
+    words = lowercase_text.split()
     collection = Counter(words)
     return collection.most_common(count)
 
