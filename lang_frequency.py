@@ -2,9 +2,8 @@ from collections import Counter
 from sys import argv
 import string 
 
-filepath = argv[1] 
-
 def load_data(filepath):
+    filepath = argv[1] 
     with open(filepath, "r") as textfile:
         text = textfile.read()
     return text
