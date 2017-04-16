@@ -10,7 +10,6 @@ def load_data(filepath):
     return text
 
 def get_most_frequent_words(text, count):
-	# remove punctuation marks
     clean_text = text.translate(str.maketrans("", "", string.punctuation))
     words = clean_text.split()
     collection = Counter(words)
