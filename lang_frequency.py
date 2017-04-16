@@ -3,7 +3,6 @@ from sys import argv
 import string 
 
 def load_data(filepath):
-    filepath = argv[1] 
     with open(filepath, "r") as textfile:
         text = textfile.read()
     return text
@@ -17,6 +16,7 @@ def get_most_frequent_words(text, count):
 
 
 if __name__ == '__main__':
+    filepath = argv[1] 
     text = load_data(filepath)    
     top_number = 10
     print("{} самых популярных слов в файле:\n{}".format(top_number, filepath))
